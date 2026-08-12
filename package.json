@@ -1,0 +1,23 @@
+{
+  "name": "deltamarkets",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "AI agent running a delta-neutral DeFi position (Uniswap V3 LP + OKX perp hedge) on X Layer",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo": "tsx src/demo/report.ts"
+  },
+  "dependencies": {
+    "decimal.js": "^10.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
